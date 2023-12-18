@@ -1,0 +1,59 @@
+@import 'reset.css';
+
+body {
+	background-color: rgb(1, 8, 22);
+	color: white;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	height: 50px;
+	background-color: rgb(17, 24, 39);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+}
+
+.container {
+	margin: 60px auto 10px auto;
+	display: flex;
+	flex-direction: column;
+	width: 50rem;
+	height: 100%;
+	background-color: rgb(17, 24, 39);
+	padding: 1.25rem;
+	gap: 1.25rem;
+}
+
+.about,
+.experiences,
+.projects,
+.skills {
+	scroll-margin-top: 60px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.title {
+	font-size: 48px;
+}
+
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
