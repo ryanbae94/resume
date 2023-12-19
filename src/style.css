@@ -182,6 +182,12 @@ li::marker {
 	padding: 3rem 0;
 }
 
+@media screen and (max-width: 960px) {
+	.experience-section {
+		width: 100vw;
+	}
+}
+
 .experience-section h2,
 .experience-section h3 {
 	margin: 1rem 0;
