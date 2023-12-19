@@ -35,7 +35,7 @@ span {
 	margin: 60px auto 10px auto;
 	display: flex;
 	flex-direction: column;
-	width: 50rem;
+	width: 50%;
 	background-color: rgb(17, 24, 39);
 	padding: 1.25rem;
 	gap: 1.25rem;
@@ -87,4 +87,21 @@ span {
 	border: 1px solid rgb(30, 41, 59);
 	border-radius: 18px;
 	padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 90%;
+	}
+
+	.title {
+		font-size: 36px;
+	}
+
+	.experiences-section,
+	.about,
+	.skills,
+	.others {
+		padding: 1rem;
+	}
 }
