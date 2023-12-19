@@ -5,6 +5,10 @@ body {
 	color: white;
 }
 
+span {
+	line-height: 1.5;
+}
+
 .nav {
 	display: flex;
 	justify-content: space-around;
@@ -25,7 +29,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 50rem;
-	height: 100%;
 	background-color: rgb(17, 24, 39);
 	padding: 1.25rem;
 	gap: 1.25rem;
@@ -34,14 +37,21 @@ body {
 .about,
 .experiences,
 .projects,
-.skills {
+.skills,
+.others {
 	scroll-margin-top: 60px;
-}
-
-.about {
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
+}
+
+.about,
+.experiences,
+.projects,
+.skills {
+	border-bottom: 1px solid rgb(30, 41, 59); /* 구분선 색상과 두께 조정 가능 */
+	padding-bottom: 40px; /* 내용과 구분선 사이의 간격 */
+	margin-bottom: 20px; /* 구분선과 다음 섹션 사이의 간격 */
 }
 
 .title {
@@ -56,4 +66,18 @@ body {
 .text-lg {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.experiences-section {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	border: 1px solid rgb(30, 41, 59);
+	border-radius: 18px;
+	padding: 20px;
 }
