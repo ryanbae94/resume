@@ -79,6 +79,7 @@ h1 {
 
 h1.underline {
 	text-decoration: underline #3a7bd5;
+	-webkit-text-decoration: underline #3a7bd5;
 }
 
 .name-line h1,
