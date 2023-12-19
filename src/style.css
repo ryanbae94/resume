@@ -1,107 +1,192 @@
-@import 'reset.css';
+@import '../node_modules/normalize.css/normalize.css';
+
+* {
+	box-sizing: border-box;
+}
 
 html,
 body {
+	font-size: 16px;
+	word-break: keep-all;
 	font-family: Pretendard, -apple-system, BlinkMacSystemFont, Bazier Square,
 		Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial,
 		sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
 		Noto Color Emoji;
-	background-color: rgb(1, 8, 22);
-	color: white;
+	color: #222222;
+	padding-bottom: 2rem;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-span {
-	line-height: 1.5;
+@media screen and (max-width: 960px) {
+	html,
+	body {
+		font-size: 14px;
+	}
 }
 
-.nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	height: 50px;
-	background-color: rgb(17, 24, 39);
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 50;
+section {
+	padding: 0 2rem;
+}
+
+section-title {
+	padding: 0 2rem;
+	position: center;
+}
+
+p {
+	margin: 0;
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+
+@media screen and (max-width: 960px) {
+	p {
+		font-size: 0.8rem;
+	}
+}
+
+a:link,
+a:visited,
+a:active {
+	color: #222222;
+	text-decoration: underline;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #00d2ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 1.1;
+}
+
+@media screen and (max-width: 960px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+h1.underline {
+	text-decoration: underline #3a7bd5;
+}
+
+.name-line h1,
+.name-line h2,
+.name-line .period-mark {
+	display: inline;
+	margin: 0;
+}
+
+h2 {
+	font-size: 3rem;
+	line-height: 1.1;
+}
+
+@media screen and (max-width: 960px) {
+	h2 {
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 1.1;
+}
+
+@media screen and (max-width: 960px) {
+	h3 {
+		font-size: 1rem;
+	}
+}
+
+ul {
+	font-size: 1.1rem;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 1.1rem;
+}
+
+@media screen and (max-width: 960px) {
+	ul {
+		font-size: 0.8rem;
+	}
+}
+
+li::marker {
+	color: #3a7bd5;
 }
 
 .container {
-	margin: 60px auto 10px auto;
 	display: flex;
 	flex-direction: column;
-	width: 60%;
-	background-color: rgb(17, 24, 39);
-	padding: 1.25rem;
-	gap: 1.25rem;
+	width: 100%;
+	margin: auto;
 }
 
-.about,
-.experiences,
-.projects,
-.skills,
-.others {
-	scroll-margin-top: 60px;
+.period-mark {
+	color: #3a7bd5;
+}
+
+.top-section {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	gap: 0.5rem;
 }
 
-.about,
-.experiences,
-.projects,
-.skills {
-	border-bottom: 1px solid rgb(30, 41, 59); /* 구분선 색상과 두께 조정 가능 */
-	padding-bottom: 40px; /* 내용과 구분선 사이의 간격 */
-	margin-bottom: 20px; /* 구분선과 다음 섹션 사이의 간격 */
+.underline {
+	text-decoration: underline #3a7bd5;
 }
 
-.title {
-	font-size: 48px;
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-.text-3xl {
-	font-size: 1.875rem;
-	line-height: 2.25rem;
+.fade-in {
+	animation: fadeIn 1s ease-out;
 }
 
-.text-lg {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
-
-.text-bold {
-	font-weight: 700;
-}
-
-.experiences-section {
-	background-color: black;
+.experience-container {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
-	border: 1px solid rgb(30, 41, 59);
-	border-radius: 18px;
-	padding: 20px;
+	width: 100vw;
 }
 
-@media only screen and (max-width: 600px) {
-	.container {
-		width: 90%;
-	}
+.experience-section {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 60vw;
+	border-bottom: solid 1px #eee;
+	padding: 3rem 0;
+}
 
-	.title {
-		font-size: 36px;
-	}
+.experience-section h2,
+.experience-section h3 {
+	margin: 1rem 0;
+}
 
-	.experiences-section,
-	.about,
-	.skills,
-	.others {
-		padding: 1rem;
-	}
+.content-title {
+	padding: 0 0 2rem 0;
 }
