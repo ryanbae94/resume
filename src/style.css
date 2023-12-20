@@ -178,6 +178,7 @@ li::marker {
 	flex-direction: column;
 	margin: auto;
 	width: 60vw;
+	max-width: 1200px;
 	border-bottom: solid 1px #eee;
 	padding: 3rem 0;
 }
