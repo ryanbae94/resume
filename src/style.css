@@ -228,10 +228,26 @@ li::marker {
 	}
 }
 
-i {
+.fa-solid {
 	position: absolute;
 	top: 80%;
 	left: 50%;
 	transform: translateX(-50%);
 	animation: fadeIn 1s ease-out, bounce 2s infinite 0.3s;
+}
+
+.skill-box {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.skill-img {
+	width: 100px;
+	height: 100px;
+}
+
+.skill-img:hover {
+	scale: 1.1;
+	transition: 0.5s all;
 }
