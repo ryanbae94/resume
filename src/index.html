@@ -8,6 +8,11 @@
 			type="text/css"
 			href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	  	/>
+
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
@@ -28,10 +33,14 @@
 				<h3 class="fade-in">
 					협업 과정에서 영감과 활력을 얻습니다<span class="period-mark">.</span>
 				</h3>
+				<a href="#work">
+					<i class="fa-solid fa-arrow-down fa-2xl" style="color: #222222;"></i>
+				</a>
+
 			</div>
 			<div class="experience-container">
 				<div class="experience-section">
-					<h1 class="content-title">
+					<h1 id="work" class="content-title">
 						Work Experience<span class="period-mark">.</span>
 					</h1>
 					<h2>Inspien<span class="period-mark">.</span></h2>
@@ -151,6 +160,7 @@
 	</body>
 </html>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script>
 	document.addEventListener('DOMContentLoaded', () => {
 		const elements = document.querySelectorAll('.fade-in');

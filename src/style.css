@@ -16,6 +16,7 @@ body {
 	padding-bottom: 2rem;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 960px) {
@@ -151,10 +152,6 @@ li::marker {
 	gap: 0.5rem;
 }
 
-.underline {
-	text-decoration: underline #3a7bd5;
-}
-
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -197,4 +194,31 @@ li::marker {
 
 .content-title {
 	padding: 0 0 2rem 0;
+}
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+i {
+	position: absolute;
+	bottom: 400px;
+	animation: bounce 2s infinite;
+}
+
+@media screen and (max-width: 960px) {
+	i {
+		bottom: 250px;
+	}
 }
