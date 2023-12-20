@@ -133,6 +133,7 @@ ul {
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	padding-inline-start: 1.1rem;
+	line-height: 1.4;
 }
 
 @media screen and (max-width: 960px) {
