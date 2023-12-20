@@ -113,6 +113,19 @@ h3 {
 	}
 }
 
+h4 {
+	font-size: 1.5rem;
+	color: #333;
+	margin-top: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 960px) {
+	h4 {
+		font-size: 0.85rem;
+	}
+}
+
 ul {
 	font-size: 1.1rem;
 	margin-block-start: 0;
