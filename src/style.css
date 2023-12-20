@@ -214,7 +214,7 @@ li::marker {
 i {
 	position: absolute;
 	bottom: 400px;
-	animation: bounce 2s infinite;
+	animation: fadeIn 1s ease-out, bounce 2s infinite 0.3s; /* 애니메이션 적용 */
 }
 
 @media screen and (max-width: 960px) {
