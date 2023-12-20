@@ -203,13 +203,13 @@ li::marker {
 	50%,
 	80%,
 	100% {
-		transform: translateY(0);
+		transform: translateX(-50%) translateY(0);
 	}
 	40% {
-		transform: translateY(-30px);
+		transform: translateX(-50%) translateY(-30px);
 	}
 	60% {
-		transform: translateY(-15px);
+		transform: translateX(-50%) translateY(-15px);
 	}
 }
 
@@ -217,5 +217,6 @@ i {
 	position: absolute;
 	top: 80%;
 	left: 50%;
-	animation: fadeIn 1s ease-out, bounce 2s infinite 0.3s; /* 애니메이션 적용 */
+	transform: translateX(-50%);
+	animation: fadeIn 1s ease-out, bounce 2s infinite 0.3s;
 }
