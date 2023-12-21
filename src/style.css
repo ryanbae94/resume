@@ -281,3 +281,7 @@ li::marker {
 		width: 100%;
 	}
 }
+
+.description-box li h4 {
+	margin-top: 1.5rem;
+}
