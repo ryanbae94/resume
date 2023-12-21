@@ -241,7 +241,14 @@ li::marker {
 	display: flex;
 	gap: 1rem;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
+}
+@media screen and (max-width: 1900px) {
+	.skill-box {
+		justify-content: flex-start;
+		align-items: center;
+	}
 }
 
 .skill-img {
@@ -263,4 +270,14 @@ li::marker {
 .skill-img:hover {
 	scale: 1.1;
 	transition: 0.5s all;
+}
+
+.description-box {
+	width: 80%;
+}
+
+@media screen and (max-width: 960px) {
+	.description-box {
+		width: 100%;
+	}
 }
