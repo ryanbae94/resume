@@ -285,3 +285,15 @@ li::marker {
 .description-box li h4 {
 	margin-top: 1.5rem;
 }
+
+ul a:link,
+ul a:visited,
+ul a:active {
+	color: #3a7bd5;
+	text-decoration: underline;
+	transition: color 0.3s ease;
+}
+
+ul a:hover {
+	color: #00d2ff;
+}
