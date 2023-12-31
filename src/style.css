@@ -297,3 +297,13 @@ ul a:active {
 ul a:hover {
 	color: #00d2ff;
 }
+
+p a:link,
+p a:visited,
+p a:active {
+	color: #3a7bd5;
+}
+
+p a:hover {
+	color: #00d2ff;
+}
